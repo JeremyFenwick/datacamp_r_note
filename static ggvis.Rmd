@@ -1,0 +1,73 @@
+---
+title: "static ggvis"
+author: "Lucas Shen"
+date: "August 7, 2015"
+output: html_document
+---
+```{r, message=FALSE}
+library(ggvis)
+library(dplyr)
+```
+***
+
+###make line chart between mpg and wt, find approx line for each group by cyl
+```{r}
+mtcars %>% 
+  group_by(cyl) %>%
+  ggvis(~mpg, ~wt) %>% 
+  layer_smooths(stroke = ~factor(cyl)) %>% 
+  layer_points()
+```
+
+###make density chart and color for different group of cyl
+* pay attention to the `~factor(var)` part. This is how we could directly handle transformed variable.
+```{r}
+mtcars %>% group_by(cyl) %>% ggvis(~mpg) %>% layer_densities(fill = ~factor(cyl))
+```
+
+###group_by more than one `var`
+* you can see that we are still coloring by cyl factor
+```{r}
+mtcars %>% group_by(cyl, am) %>% ggvis(~mpg, fill = ~factor(cyl)) %>% layer_densities()
+```
+
+###with `interaction()`
+* `interaction()` is a way to map `ggvis` properties to a combination of `var`s, so in this way, we could color the graph by every (cyl, am) combination
+```{r}
+mtcars %>% group_by(cyl, am) %>% ggvis(~mpg, fill = ~interaction(cyl, am)) %>% layer_densities()
+```
+
+***
+
+##Multi-layer plot
+2 points here:
+
+1. we should seperate properties for different layers to create the real visual effect you want
+2. put all those common property into ggvis()
+
+```{r}
+pressure %>% 
+  ggvis(~temperature, ~pressure, stroke := "skyblue",strokeOpacity := 0.5, strokeWidth := 5) %>% 
+  layer_lines() %>% 
+  layer_points(fill = ~temperature, shape := "triangle-up", size := 300)
+```
+
+```{r}
+pressure %>% 
+  ggvis(~temperature, ~pressure) %>%
+  layer_lines(opacity := 0.5) %>%
+  layer_points() %>%
+  layer_model_predictions(model = "lm", stroke := "navy") %>%
+  layer_smooths(stroke := "skyblue")
+```
+
+
+
+
+
+
+
+
+
+
+

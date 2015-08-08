@@ -1,0 +1,43 @@
+---
+title: "interactive ggvis"
+author: "Lucas Shen"
+date: "August 7, 2015"
+output: html_document
+runtime: shiny
+---
+```{r, message=FALSE}
+library(ggvis)
+library(dplyr)
+```
+
+###Just a simple slider
+```{r}
+mtcars %>% 
+  ggvis(~mpg) %>% 
+  layer_histograms(width = input_slider(label='Choose a binwidth', 
+                                        value = 3, min=1, max=20))
+```
+
+###Selection box
+```{r}
+faithful %>% 
+  ggvis(~waiting, ~eruptions, fillOpacity := 0.5, 
+        shape := input_select(label = "Choose shape:", 
+                              choices = c("circle", "square", "cross", 
+                                          "diamond", "triangle-up", "triangle-down")), 
+        fill := input_select(label = "Choose color:", 
+                             choices = c("black", "red", "blue", "green"))) %>% 
+  layer_points()
+```
+
+
+###let user choose variable by `map=as.name`
+```{r}
+mtcars %>% 
+  ggvis(~mpg, ~wt, 
+        fill := input_select(label = 'Choose fill variable:', 
+                             choices = names(mtcars), 
+                             map =as.name )) %>% 
+  layer_points()
+```
+

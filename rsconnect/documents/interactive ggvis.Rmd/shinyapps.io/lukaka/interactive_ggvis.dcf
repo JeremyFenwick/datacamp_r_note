@@ -1,0 +1,9 @@
+name: interactive_ggvis
+account: lukaka
+server: shinyapps.io
+bundleId: 234793
+url: https://lukaka.shinyapps.io/interactive_ggvis
+when: 1438988769.88325
+asMultiple: TRUE
+asStatic: FALSE
+ignoredFiles: static ggvis.Rmd
