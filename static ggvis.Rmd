@@ -1,7 +1,7 @@
 ---
 title: "static ggvis"
 author: "Lucas Shen"
-date: "August 7, 2015"
+date: "August 8, 2015"
 output: html_document
 ---
 ```{r, message=FALSE}
@@ -61,13 +61,88 @@ pressure %>%
   layer_smooths(stroke := "skyblue")
 ```
 
+***
+###Polish a bit: addind axes and legends
+* add modified axes, attention on `value` and `subdivide` to control tick mark.
+```{r}
+faithful %>% 
+  ggvis(~waiting, ~eruptions) %>% 
+  layer_points() %>% 
+  add_axis("y", title = "Duration of eruption (m)", 
+          values = c(2, 3, 4, 5), subdivide = 9) %>% 
+  add_axis("x", title = "Time since previous eruption (m)",
+          values = seq(50,90, by=10), subdivide = 1)
+```
 
+***
 
+1. now I know `~factor(var)` could be used to transform var in so many place
+2. `'fill'` here refer to `scales` arguement of `add_legend`, this is the name of scale for which t oadd a legend. We could use "size", "shape", "fill", "stroke", and we could even use more than one.
 
+```{r}
+faithful %>% 
+  ggvis(~waiting, ~eruptions, opacity := 0.6, 
+        fill = ~factor(round(eruptions))) %>% 
+  layer_points() %>%
+  add_legend('fill', title = '~duration (m)', orient = 'left')
+```
 
+* before consolidate legends, kind of messy
+```{r}
+faithful %>% 
+  ggvis(~waiting, ~eruptions, opacity := 0.6, 
+        fill = ~factor(round(eruptions)), shape = ~factor(round(eruptions)), 
+        size = ~round(eruptions))  %>%
+  layer_points()
+```
 
+* after consolidation, see `add_legend(c('fill', 'shape', 'size'))`
+```{r}
+faithful %>% 
+  ggvis(~waiting, ~eruptions, opacity := 0.6, 
+        fill = ~factor(round(eruptions)), shape = ~factor(round(eruptions)), 
+        size = ~round(eruptions))  %>%
+  layer_points() %>%
+  add_legend(title = '~ duration (m)', c('fill', 'shape', 'size'))
+```
 
+###Customize the color with `scale`
+* `scale_numeric()`
+* `scale_datetime()`
+* `scale_logical()`
+* `scale_nominal()`
+* `scale_singular()`
 
+***
 
+* `scale_numeric()` is contineuous color mapping to a range of color
+```{r}
+mtcars %>% ggvis(~wt, ~mpg, fill = ~hp) %>%
+  layer_points() %>%
+  scale_numeric('fill', range = c('beige', 'green'))
+```
 
+* `scale_nominal()` is categorical mapping of color
+```{r}
+mtcars %>% ggvis(~wt, ~mpg, fill = ~factor(cyl)) %>%
+  layer_points() %>%
+  scale_nominal("fill", range = c("purple", "blue", "green"))
+```
 
+***
+
+###`scale` more than color
+* `scale` can be used not only to color, but to other property, like `opacity` here
+```{r}
+mtcars %>% ggvis(x = ~wt, y = ~mpg, fill = ~factor(cyl), opacity = ~hp) %>%
+  layer_points() %>%
+  scale_numeric('opacity', range = c(0.2,1))
+```
+
+* we can even adjust the scale of the value of x, and y axis, see `?scale_numeric` for details
+```{r}
+mtcars %>% ggvis(~wt, ~mpg, fill = ~disp) %>%
+  layer_points() %>%
+  scale_numeric("y", domain = c(0, NA)) %>%
+  scale_numeric("x", domain = c(0, 6))
+```

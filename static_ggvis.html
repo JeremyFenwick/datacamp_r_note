@@ -72,7 +72,7 @@ img {
 <div id="header">
 <h1 class="title">static ggvis</h1>
 <h4 class="author"><em>Lucas Shen</em></h4>
-<h4 class="date"><em>August 7, 2015</em></h4>
+<h4 class="date"><em>August 8, 2015</em></h4>
 </div>
 
 
@@ -88,27 +88,27 @@ library(dplyr)</code></pre>
   layer_points()</code></pre>
 <pre><code>## Warning in rbind_all(out[[1]]): Unequal factor levels: coercing to
 ## character</code></pre>
-<p><div id="plot_id884749555-container" class="ggvis-output-container">
-<div id="plot_id884749555" class="ggvis-output"></div>
+<p><div id="plot_id230850417-container" class="ggvis-output-container">
+<div id="plot_id230850417" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id884749555_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id884749555" data-renderer="svg">SVG</a>
+<a id="plot_id230850417_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id230850417" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id884749555_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id884749555" data-renderer="canvas">Canvas</a>
+<a id="plot_id230850417_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id230850417" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id884749555_download" class="ggvis-download" data-plot-id="plot_id884749555">Download</a>
+<a id="plot_id230850417_download" class="ggvis-download" data-plot-id="plot_id230850417">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id884749555_spec = {
+var plot_id230850417_spec = {
   "data": [
     {
       "name": ".0_flat",
@@ -334,7 +334,7 @@ var plot_id884749555_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id884749555").parseSpec(plot_id884749555_spec);
+ggvis.getPlot("plot_id230850417").parseSpec(plot_id230850417_spec);
 </script></p>
 </div>
 <div id="make-density-chart-and-color-for-different-group-of-cyl" class="section level3">
@@ -345,27 +345,27 @@ ggvis.getPlot("plot_id884749555").parseSpec(plot_id884749555_spec);
 <pre class="r"><code>mtcars %&gt;% group_by(cyl) %&gt;% ggvis(~mpg) %&gt;% layer_densities(fill = ~factor(cyl))</code></pre>
 <pre><code>## Warning in rbind_all(out[[1]]): Unequal factor levels: coercing to
 ## character</code></pre>
-<p><div id="plot_id978331651-container" class="ggvis-output-container">
-<div id="plot_id978331651" class="ggvis-output"></div>
+<p><div id="plot_id964019567-container" class="ggvis-output-container">
+<div id="plot_id964019567" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id978331651_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id978331651" data-renderer="svg">SVG</a>
+<a id="plot_id964019567_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id964019567" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id978331651_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id978331651" data-renderer="canvas">Canvas</a>
+<a id="plot_id964019567_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id964019567" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id978331651_download" class="ggvis-download" data-plot-id="plot_id978331651">Download</a>
+<a id="plot_id964019567_download" class="ggvis-download" data-plot-id="plot_id964019567">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id978331651_spec = {
+var plot_id964019567_spec = {
   "data": [
     {
       "name": ".0/density1_flat",
@@ -571,7 +571,7 @@ var plot_id978331651_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id978331651").parseSpec(plot_id978331651_spec);
+ggvis.getPlot("plot_id964019567").parseSpec(plot_id964019567_spec);
 </script></p>
 </div>
 <div id="group_by-more-than-one-var" class="section level3">
@@ -582,27 +582,27 @@ ggvis.getPlot("plot_id978331651").parseSpec(plot_id978331651_spec);
 <pre class="r"><code>mtcars %&gt;% group_by(cyl, am) %&gt;% ggvis(~mpg, fill = ~factor(cyl)) %&gt;% layer_densities()</code></pre>
 <pre><code>## Warning in rbind_all(out[[1]]): Unequal factor levels: coercing to
 ## character</code></pre>
-<p><div id="plot_id589972073-container" class="ggvis-output-container">
-<div id="plot_id589972073" class="ggvis-output"></div>
+<p><div id="plot_id684012908-container" class="ggvis-output-container">
+<div id="plot_id684012908" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id589972073_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id589972073" data-renderer="svg">SVG</a>
+<a id="plot_id684012908_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id684012908" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id589972073_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id589972073" data-renderer="canvas">Canvas</a>
+<a id="plot_id684012908_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id684012908" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id589972073_download" class="ggvis-download" data-plot-id="plot_id589972073">Download</a>
+<a id="plot_id684012908_download" class="ggvis-download" data-plot-id="plot_id684012908">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id589972073_spec = {
+var plot_id684012908_spec = {
   "data": [
     {
       "name": ".0/density1_flat",
@@ -810,7 +810,7 @@ var plot_id589972073_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id589972073").parseSpec(plot_id589972073_spec);
+ggvis.getPlot("plot_id684012908").parseSpec(plot_id684012908_spec);
 </script></p>
 </div>
 <div id="with-interaction" class="section level3">
@@ -821,27 +821,27 @@ ggvis.getPlot("plot_id589972073").parseSpec(plot_id589972073_spec);
 <pre class="r"><code>mtcars %&gt;% group_by(cyl, am) %&gt;% ggvis(~mpg, fill = ~interaction(cyl, am)) %&gt;% layer_densities()</code></pre>
 <pre><code>## Warning in rbind_all(out[[1]]): Unequal factor levels: coercing to
 ## character</code></pre>
-<p><div id="plot_id514488936-container" class="ggvis-output-container">
-<div id="plot_id514488936" class="ggvis-output"></div>
+<p><div id="plot_id605649882-container" class="ggvis-output-container">
+<div id="plot_id605649882" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id514488936_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id514488936" data-renderer="svg">SVG</a>
+<a id="plot_id605649882_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id605649882" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id514488936_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id514488936" data-renderer="canvas">Canvas</a>
+<a id="plot_id605649882_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id605649882" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id514488936_download" class="ggvis-download" data-plot-id="plot_id514488936">Download</a>
+<a id="plot_id605649882_download" class="ggvis-download" data-plot-id="plot_id605649882">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id514488936_spec = {
+var plot_id605649882_spec = {
   "data": [
     {
       "name": ".0/density1_flat",
@@ -1049,7 +1049,7 @@ var plot_id514488936_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id514488936").parseSpec(plot_id514488936_spec);
+ggvis.getPlot("plot_id605649882").parseSpec(plot_id605649882_spec);
 </script></p>
 <hr />
 </div>
@@ -1064,27 +1064,27 @@ ggvis.getPlot("plot_id514488936").parseSpec(plot_id514488936_spec);
   ggvis(~temperature, ~pressure, stroke := &quot;skyblue&quot;,strokeOpacity := 0.5, strokeWidth := 5) %&gt;% 
   layer_lines() %&gt;% 
   layer_points(fill = ~temperature, shape := &quot;triangle-up&quot;, size := 300)</code></pre>
-<p><div id="plot_id681304648-container" class="ggvis-output-container">
-<div id="plot_id681304648" class="ggvis-output"></div>
+<p><div id="plot_id560817794-container" class="ggvis-output-container">
+<div id="plot_id560817794" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id681304648_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id681304648" data-renderer="svg">SVG</a>
+<a id="plot_id560817794_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id560817794" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id681304648_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id681304648" data-renderer="canvas">Canvas</a>
+<a id="plot_id560817794_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id560817794" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id681304648_download" class="ggvis-download" data-plot-id="plot_id681304648">Download</a>
+<a id="plot_id560817794_download" class="ggvis-download" data-plot-id="plot_id560817794">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id681304648_spec = {
+var plot_id560817794_spec = {
   "data": [
     {
       "name": ".0",
@@ -1288,7 +1288,7 @@ var plot_id681304648_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id681304648").parseSpec(plot_id681304648_spec);
+ggvis.getPlot("plot_id560817794").parseSpec(plot_id560817794_spec);
 </script></p>
 <pre class="r"><code>pressure %&gt;% 
   ggvis(~temperature, ~pressure) %&gt;%
@@ -1297,27 +1297,27 @@ ggvis.getPlot("plot_id681304648").parseSpec(plot_id681304648_spec);
   layer_model_predictions(model = &quot;lm&quot;, stroke := &quot;navy&quot;) %&gt;%
   layer_smooths(stroke := &quot;skyblue&quot;)</code></pre>
 <pre><code>## Guessing formula = pressure ~ temperature</code></pre>
-<p><div id="plot_id326780847-container" class="ggvis-output-container">
-<div id="plot_id326780847" class="ggvis-output"></div>
+<p><div id="plot_id160722834-container" class="ggvis-output-container">
+<div id="plot_id160722834" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id326780847_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id326780847" data-renderer="svg">SVG</a>
+<a id="plot_id160722834_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id160722834" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id326780847_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id326780847" data-renderer="canvas">Canvas</a>
+<a id="plot_id160722834_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id160722834" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id326780847_download" class="ggvis-download" data-plot-id="plot_id326780847">Download</a>
+<a id="plot_id160722834_download" class="ggvis-download" data-plot-id="plot_id160722834">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id326780847_spec = {
+var plot_id160722834_spec = {
   "data": [
     {
       "name": ".0",
@@ -1564,8 +1564,1564 @@ var plot_id326780847_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id326780847").parseSpec(plot_id326780847_spec);
+ggvis.getPlot("plot_id160722834").parseSpec(plot_id160722834_spec);
 </script></p>
+<hr />
+<div id="polish-a-bit-addind-axes-and-legends" class="section level3">
+<h3>Polish a bit: addind axes and legends</h3>
+<ul>
+<li>add modified axes, attention on <code>value</code> and <code>subdivide</code> to control tick mark.</li>
+</ul>
+<pre class="r"><code>faithful %&gt;% 
+  ggvis(~waiting, ~eruptions) %&gt;% 
+  layer_points() %&gt;% 
+  add_axis(&quot;y&quot;, title = &quot;Duration of eruption (m)&quot;, 
+          values = c(2, 3, 4, 5), subdivide = 9) %&gt;% 
+  add_axis(&quot;x&quot;, title = &quot;Time since previous eruption (m)&quot;,
+          values = seq(50,90, by=10), subdivide = 1)</code></pre>
+<p><div id="plot_id367939563-container" class="ggvis-output-container">
+<div id="plot_id367939563" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id367939563_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id367939563" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id367939563_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id367939563" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id367939563_download" class="ggvis-download" data-plot-id="plot_id367939563">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id367939563_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "waiting": "number",
+          "eruptions": "number"
+        }
+      },
+      "values": "\"waiting\",\"eruptions\"\n79,3.6\n54,1.8\n74,3.333\n62,2.283\n85,4.533\n55,2.883\n88,4.7\n85,3.6\n51,1.95\n85,4.35\n54,1.833\n84,3.917\n78,4.2\n47,1.75\n83,4.7\n52,2.167\n62,1.75\n84,4.8\n52,1.6\n79,4.25\n51,1.8\n47,1.75\n78,3.45\n69,3.067\n74,4.533\n83,3.6\n55,1.967\n76,4.083\n78,3.85\n79,4.433\n73,4.3\n77,4.467\n66,3.367\n80,4.033\n74,3.833\n52,2.017\n48,1.867\n80,4.833\n59,1.833\n90,4.783\n80,4.35\n58,1.883\n84,4.567\n58,1.75\n73,4.533\n83,3.317\n64,3.833\n53,2.1\n82,4.633\n59,2\n75,4.8\n90,4.716\n54,1.833\n80,4.833\n54,1.733\n83,4.883\n71,3.717\n64,1.667\n77,4.567\n81,4.317\n59,2.233\n84,4.5\n48,1.75\n82,4.8\n60,1.817\n92,4.4\n78,4.167\n78,4.7\n65,2.067\n73,4.7\n82,4.033\n56,1.967\n79,4.5\n71,4\n62,1.983\n76,5.067\n60,2.017\n78,4.567\n76,3.883\n83,3.6\n75,4.133\n82,4.333\n70,4.1\n65,2.633\n73,4.067\n88,4.933\n76,3.95\n80,4.517\n48,2.167\n86,4\n60,2.2\n90,4.333\n50,1.867\n78,4.817\n63,1.833\n72,4.3\n84,4.667\n75,3.75\n51,1.867\n82,4.9\n62,2.483\n88,4.367\n49,2.1\n83,4.5\n81,4.05\n47,1.867\n84,4.7\n52,1.783\n86,4.85\n81,3.683\n75,4.733\n59,2.3\n89,4.9\n79,4.417\n59,1.7\n81,4.633\n50,2.317\n85,4.6\n59,1.817\n87,4.417\n53,2.617\n69,4.067\n77,4.25\n56,1.967\n88,4.6\n81,3.767\n45,1.917\n82,4.5\n55,2.267\n90,4.65\n45,1.867\n83,4.167\n56,2.8\n89,4.333\n46,1.833\n82,4.383\n51,1.883\n86,4.933\n53,2.033\n79,3.733\n81,4.233\n60,2.233\n82,4.533\n77,4.817\n76,4.333\n59,1.983\n80,4.633\n49,2.017\n96,5.1\n53,1.8\n77,5.033\n77,4\n65,2.4\n81,4.6\n71,3.567\n70,4\n81,4.5\n93,4.083\n53,1.8\n89,3.967\n45,2.2\n86,4.15\n58,2\n78,3.833\n66,3.5\n76,4.583\n63,2.367\n88,5\n52,1.933\n93,4.617\n49,1.917\n57,2.083\n77,4.583\n68,3.333\n81,4.167\n81,4.333\n73,4.5\n50,2.417\n85,4\n74,4.167\n55,1.883\n77,4.583\n83,4.25\n83,3.767\n51,2.033\n78,4.433\n84,4.083\n46,1.833\n83,4.417\n55,2.183\n81,4.8\n57,1.833\n76,4.8\n84,4.1\n77,3.966\n81,4.233\n87,3.5\n77,4.366\n51,2.25\n78,4.667\n60,2.1\n82,4.35\n91,4.133\n53,1.867\n78,4.6\n46,1.783\n77,4.367\n84,3.85\n49,1.933\n83,4.5\n71,2.383\n80,4.7\n49,1.867\n75,3.833\n64,3.417\n76,4.233\n53,2.4\n94,4.8\n55,2\n76,4.15\n50,1.867\n82,4.267\n54,1.75\n75,4.483\n78,4\n79,4.117\n78,4.083\n78,4.267\n70,3.917\n79,4.55\n70,4.083\n54,2.417\n86,4.183\n50,2.217\n90,4.45\n54,1.883\n54,1.85\n77,4.283\n79,3.95\n64,2.333\n75,4.15\n47,2.35\n86,4.933\n63,2.9\n85,4.583\n82,3.833\n57,2.083\n82,4.367\n67,2.133\n74,4.35\n54,2.2\n83,4.45\n73,3.567\n73,4.5\n88,4.15\n80,3.817\n71,3.917\n83,4.45\n56,2\n79,4.283\n78,4.767\n84,4.533\n58,1.85\n83,4.25\n43,1.983\n60,2.25\n75,4.75\n81,4.117\n46,2.15\n90,4.417\n46,1.817\n74,4.467"
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n40.35\n98.65"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n1.425\n5.275"
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "fill": {
+            "value": "#000000"
+          },
+          "size": {
+            "value": 50
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.waiting"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.eruptions"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [],
+  "axes": [
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "title": "Duration of eruption (m)",
+      "values": [2, 3, 4, 5],
+      "subdivide": 9,
+      "layer": "back",
+      "grid": true
+    },
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "title": "Time since previous eruption (m)",
+      "values": [50, 60, 70, 80, 90],
+      "subdivide": 1,
+      "layer": "back",
+      "grid": true
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id367939563").parseSpec(plot_id367939563_spec);
+</script></p>
+<hr />
+<ol style="list-style-type: decimal">
+<li>now I know <code>~factor(var)</code> could be used to transform var in so many place</li>
+<li><code>'fill'</code> here refer to <code>scales</code> arguement of <code>add_legend</code>, this is the name of scale for which t oadd a legend. We could use “size”, “shape”, “fill”, “stroke”, and we could even use more than one.</li>
+</ol>
+<pre class="r"><code>faithful %&gt;% 
+  ggvis(~waiting, ~eruptions, opacity := 0.6, 
+        fill = ~factor(round(eruptions))) %&gt;% 
+  layer_points() %&gt;%
+  add_legend('fill', title = '~duration (m)', orient = 'left')</code></pre>
+<p><div id="plot_id448938071-container" class="ggvis-output-container">
+<div id="plot_id448938071" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id448938071_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id448938071" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id448938071_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id448938071" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id448938071_download" class="ggvis-download" data-plot-id="plot_id448938071">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id448938071_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "waiting": "number",
+          "eruptions": "number"
+        }
+      },
+      "values": "\"factor(round(eruptions))\",\"waiting\",\"eruptions\"\n\"4\",79,3.6\n\"2\",54,1.8\n\"3\",74,3.333\n\"2\",62,2.283\n\"5\",85,4.533\n\"3\",55,2.883\n\"5\",88,4.7\n\"4\",85,3.6\n\"2\",51,1.95\n\"4\",85,4.35\n\"2\",54,1.833\n\"4\",84,3.917\n\"4\",78,4.2\n\"2\",47,1.75\n\"5\",83,4.7\n\"2\",52,2.167\n\"2\",62,1.75\n\"5\",84,4.8\n\"2\",52,1.6\n\"4\",79,4.25\n\"2\",51,1.8\n\"2\",47,1.75\n\"3\",78,3.45\n\"3\",69,3.067\n\"5\",74,4.533\n\"4\",83,3.6\n\"2\",55,1.967\n\"4\",76,4.083\n\"4\",78,3.85\n\"4\",79,4.433\n\"4\",73,4.3\n\"4\",77,4.467\n\"3\",66,3.367\n\"4\",80,4.033\n\"4\",74,3.833\n\"2\",52,2.017\n\"2\",48,1.867\n\"5\",80,4.833\n\"2\",59,1.833\n\"5\",90,4.783\n\"4\",80,4.35\n\"2\",58,1.883\n\"5\",84,4.567\n\"2\",58,1.75\n\"5\",73,4.533\n\"3\",83,3.317\n\"4\",64,3.833\n\"2\",53,2.1\n\"5\",82,4.633\n\"2\",59,2\n\"5\",75,4.8\n\"5\",90,4.716\n\"2\",54,1.833\n\"5\",80,4.833\n\"2\",54,1.733\n\"5\",83,4.883\n\"4\",71,3.717\n\"2\",64,1.667\n\"5\",77,4.567\n\"4\",81,4.317\n\"2\",59,2.233\n\"4\",84,4.5\n\"2\",48,1.75\n\"5\",82,4.8\n\"2\",60,1.817\n\"4\",92,4.4\n\"4\",78,4.167\n\"5\",78,4.7\n\"2\",65,2.067\n\"5\",73,4.7\n\"4\",82,4.033\n\"2\",56,1.967\n\"4\",79,4.5\n\"4\",71,4\n\"2\",62,1.983\n\"5\",76,5.067\n\"2\",60,2.017\n\"5\",78,4.567\n\"4\",76,3.883\n\"4\",83,3.6\n\"4\",75,4.133\n\"4\",82,4.333\n\"4\",70,4.1\n\"3\",65,2.633\n\"4\",73,4.067\n\"5\",88,4.933\n\"4\",76,3.95\n\"5\",80,4.517\n\"2\",48,2.167\n\"4\",86,4\n\"2\",60,2.2\n\"4\",90,4.333\n\"2\",50,1.867\n\"5\",78,4.817\n\"2\",63,1.833\n\"4\",72,4.3\n\"5\",84,4.667\n\"4\",75,3.75\n\"2\",51,1.867\n\"5\",82,4.9\n\"2\",62,2.483\n\"4\",88,4.367\n\"2\",49,2.1\n\"4\",83,4.5\n\"4\",81,4.05\n\"2\",47,1.867\n\"5\",84,4.7\n\"2\",52,1.783\n\"5\",86,4.85\n\"4\",81,3.683\n\"5\",75,4.733\n\"2\",59,2.3\n\"5\",89,4.9\n\"4\",79,4.417\n\"2\",59,1.7\n\"5\",81,4.633\n\"2\",50,2.317\n\"5\",85,4.6\n\"2\",59,1.817\n\"4\",87,4.417\n\"3\",53,2.617\n\"4\",69,4.067\n\"4\",77,4.25\n\"2\",56,1.967\n\"5\",88,4.6\n\"4\",81,3.767\n\"2\",45,1.917\n\"4\",82,4.5\n\"2\",55,2.267\n\"5\",90,4.65\n\"2\",45,1.867\n\"4\",83,4.167\n\"3\",56,2.8\n\"4\",89,4.333\n\"2\",46,1.833\n\"4\",82,4.383\n\"2\",51,1.883\n\"5\",86,4.933\n\"2\",53,2.033\n\"4\",79,3.733\n\"4\",81,4.233\n\"2\",60,2.233\n\"5\",82,4.533\n\"5\",77,4.817\n\"4\",76,4.333\n\"2\",59,1.983\n\"5\",80,4.633\n\"2\",49,2.017\n\"5\",96,5.1\n\"2\",53,1.8\n\"5\",77,5.033\n\"4\",77,4\n\"2\",65,2.4\n\"5\",81,4.6\n\"4\",71,3.567\n\"4\",70,4\n\"4\",81,4.5\n\"4\",93,4.083\n\"2\",53,1.8\n\"4\",89,3.967\n\"2\",45,2.2\n\"4\",86,4.15\n\"2\",58,2\n\"4\",78,3.833\n\"4\",66,3.5\n\"5\",76,4.583\n\"2\",63,2.367\n\"5\",88,5\n\"2\",52,1.933\n\"5\",93,4.617\n\"2\",49,1.917\n\"2\",57,2.083\n\"5\",77,4.583\n\"3\",68,3.333\n\"4\",81,4.167\n\"4\",81,4.333\n\"4\",73,4.5\n\"2\",50,2.417\n\"4\",85,4\n\"4\",74,4.167\n\"2\",55,1.883\n\"5\",77,4.583\n\"4\",83,4.25\n\"4\",83,3.767\n\"2\",51,2.033\n\"4\",78,4.433\n\"4\",84,4.083\n\"2\",46,1.833\n\"4\",83,4.417\n\"2\",55,2.183\n\"5\",81,4.8\n\"2\",57,1.833\n\"5\",76,4.8\n\"4\",84,4.1\n\"4\",77,3.966\n\"4\",81,4.233\n\"4\",87,3.5\n\"4\",77,4.366\n\"2\",51,2.25\n\"5\",78,4.667\n\"2\",60,2.1\n\"4\",82,4.35\n\"4\",91,4.133\n\"2\",53,1.867\n\"5\",78,4.6\n\"2\",46,1.783\n\"4\",77,4.367\n\"4\",84,3.85\n\"2\",49,1.933\n\"4\",83,4.5\n\"2\",71,2.383\n\"5\",80,4.7\n\"2\",49,1.867\n\"4\",75,3.833\n\"3\",64,3.417\n\"4\",76,4.233\n\"2\",53,2.4\n\"5\",94,4.8\n\"2\",55,2\n\"4\",76,4.15\n\"2\",50,1.867\n\"4\",82,4.267\n\"2\",54,1.75\n\"4\",75,4.483\n\"4\",78,4\n\"4\",79,4.117\n\"4\",78,4.083\n\"4\",78,4.267\n\"4\",70,3.917\n\"5\",79,4.55\n\"4\",70,4.083\n\"2\",54,2.417\n\"4\",86,4.183\n\"2\",50,2.217\n\"4\",90,4.45\n\"2\",54,1.883\n\"2\",54,1.85\n\"4\",77,4.283\n\"4\",79,3.95\n\"2\",64,2.333\n\"4\",75,4.15\n\"2\",47,2.35\n\"5\",86,4.933\n\"3\",63,2.9\n\"5\",85,4.583\n\"4\",82,3.833\n\"2\",57,2.083\n\"4\",82,4.367\n\"2\",67,2.133\n\"4\",74,4.35\n\"2\",54,2.2\n\"4\",83,4.45\n\"4\",73,3.567\n\"4\",73,4.5\n\"4\",88,4.15\n\"4\",80,3.817\n\"4\",71,3.917\n\"4\",83,4.45\n\"2\",56,2\n\"4\",79,4.283\n\"5\",78,4.767\n\"5\",84,4.533\n\"2\",58,1.85\n\"4\",83,4.25\n\"2\",43,1.983\n\"2\",60,2.25\n\"5\",75,4.75\n\"4\",81,4.117\n\"2\",46,2.15\n\"4\",90,4.417\n\"2\",46,1.817\n\"4\",74,4.467"
+    },
+    {
+      "name": "scale/fill",
+      "format": {
+        "type": "csv",
+        "parse": {}
+      },
+      "values": "\"domain\"\n\"2\"\n\"3\"\n\"4\"\n\"5\""
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n40.35\n98.65"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n1.425\n5.275"
+    }
+  ],
+  "scales": [
+    {
+      "name": "fill",
+      "type": "ordinal",
+      "domain": {
+        "data": "scale/fill",
+        "field": "data.domain"
+      },
+      "points": true,
+      "sort": false,
+      "range": "category10"
+    },
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "size": {
+            "value": 50
+          },
+          "fill": {
+            "scale": "fill",
+            "field": "data.factor(round(eruptions))"
+          },
+          "opacity": {
+            "value": 0.6
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.waiting"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.eruptions"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [
+    {
+      "orient": "left",
+      "title": "~duration (m)",
+      "fill": "fill"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "layer": "back",
+      "grid": true,
+      "title": "waiting"
+    },
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "layer": "back",
+      "grid": true,
+      "title": "eruptions"
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id448938071").parseSpec(plot_id448938071_spec);
+</script></p>
+<ul>
+<li>before consolidate legends, kind of messy</li>
+</ul>
+<pre class="r"><code>faithful %&gt;% 
+  ggvis(~waiting, ~eruptions, opacity := 0.6, 
+        fill = ~factor(round(eruptions)), shape = ~factor(round(eruptions)), 
+        size = ~round(eruptions))  %&gt;%
+  layer_points()</code></pre>
+<p><div id="plot_id454069254-container" class="ggvis-output-container">
+<div id="plot_id454069254" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id454069254_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id454069254" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id454069254_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id454069254" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id454069254_download" class="ggvis-download" data-plot-id="plot_id454069254">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id454069254_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "round(eruptions)": "number",
+          "waiting": "number",
+          "eruptions": "number"
+        }
+      },
+      "values": "\"factor(round(eruptions))\",\"round(eruptions)\",\"waiting\",\"eruptions\"\n\"4\",4,79,3.6\n\"2\",2,54,1.8\n\"3\",3,74,3.333\n\"2\",2,62,2.283\n\"5\",5,85,4.533\n\"3\",3,55,2.883\n\"5\",5,88,4.7\n\"4\",4,85,3.6\n\"2\",2,51,1.95\n\"4\",4,85,4.35\n\"2\",2,54,1.833\n\"4\",4,84,3.917\n\"4\",4,78,4.2\n\"2\",2,47,1.75\n\"5\",5,83,4.7\n\"2\",2,52,2.167\n\"2\",2,62,1.75\n\"5\",5,84,4.8\n\"2\",2,52,1.6\n\"4\",4,79,4.25\n\"2\",2,51,1.8\n\"2\",2,47,1.75\n\"3\",3,78,3.45\n\"3\",3,69,3.067\n\"5\",5,74,4.533\n\"4\",4,83,3.6\n\"2\",2,55,1.967\n\"4\",4,76,4.083\n\"4\",4,78,3.85\n\"4\",4,79,4.433\n\"4\",4,73,4.3\n\"4\",4,77,4.467\n\"3\",3,66,3.367\n\"4\",4,80,4.033\n\"4\",4,74,3.833\n\"2\",2,52,2.017\n\"2\",2,48,1.867\n\"5\",5,80,4.833\n\"2\",2,59,1.833\n\"5\",5,90,4.783\n\"4\",4,80,4.35\n\"2\",2,58,1.883\n\"5\",5,84,4.567\n\"2\",2,58,1.75\n\"5\",5,73,4.533\n\"3\",3,83,3.317\n\"4\",4,64,3.833\n\"2\",2,53,2.1\n\"5\",5,82,4.633\n\"2\",2,59,2\n\"5\",5,75,4.8\n\"5\",5,90,4.716\n\"2\",2,54,1.833\n\"5\",5,80,4.833\n\"2\",2,54,1.733\n\"5\",5,83,4.883\n\"4\",4,71,3.717\n\"2\",2,64,1.667\n\"5\",5,77,4.567\n\"4\",4,81,4.317\n\"2\",2,59,2.233\n\"4\",4,84,4.5\n\"2\",2,48,1.75\n\"5\",5,82,4.8\n\"2\",2,60,1.817\n\"4\",4,92,4.4\n\"4\",4,78,4.167\n\"5\",5,78,4.7\n\"2\",2,65,2.067\n\"5\",5,73,4.7\n\"4\",4,82,4.033\n\"2\",2,56,1.967\n\"4\",4,79,4.5\n\"4\",4,71,4\n\"2\",2,62,1.983\n\"5\",5,76,5.067\n\"2\",2,60,2.017\n\"5\",5,78,4.567\n\"4\",4,76,3.883\n\"4\",4,83,3.6\n\"4\",4,75,4.133\n\"4\",4,82,4.333\n\"4\",4,70,4.1\n\"3\",3,65,2.633\n\"4\",4,73,4.067\n\"5\",5,88,4.933\n\"4\",4,76,3.95\n\"5\",5,80,4.517\n\"2\",2,48,2.167\n\"4\",4,86,4\n\"2\",2,60,2.2\n\"4\",4,90,4.333\n\"2\",2,50,1.867\n\"5\",5,78,4.817\n\"2\",2,63,1.833\n\"4\",4,72,4.3\n\"5\",5,84,4.667\n\"4\",4,75,3.75\n\"2\",2,51,1.867\n\"5\",5,82,4.9\n\"2\",2,62,2.483\n\"4\",4,88,4.367\n\"2\",2,49,2.1\n\"4\",4,83,4.5\n\"4\",4,81,4.05\n\"2\",2,47,1.867\n\"5\",5,84,4.7\n\"2\",2,52,1.783\n\"5\",5,86,4.85\n\"4\",4,81,3.683\n\"5\",5,75,4.733\n\"2\",2,59,2.3\n\"5\",5,89,4.9\n\"4\",4,79,4.417\n\"2\",2,59,1.7\n\"5\",5,81,4.633\n\"2\",2,50,2.317\n\"5\",5,85,4.6\n\"2\",2,59,1.817\n\"4\",4,87,4.417\n\"3\",3,53,2.617\n\"4\",4,69,4.067\n\"4\",4,77,4.25\n\"2\",2,56,1.967\n\"5\",5,88,4.6\n\"4\",4,81,3.767\n\"2\",2,45,1.917\n\"4\",4,82,4.5\n\"2\",2,55,2.267\n\"5\",5,90,4.65\n\"2\",2,45,1.867\n\"4\",4,83,4.167\n\"3\",3,56,2.8\n\"4\",4,89,4.333\n\"2\",2,46,1.833\n\"4\",4,82,4.383\n\"2\",2,51,1.883\n\"5\",5,86,4.933\n\"2\",2,53,2.033\n\"4\",4,79,3.733\n\"4\",4,81,4.233\n\"2\",2,60,2.233\n\"5\",5,82,4.533\n\"5\",5,77,4.817\n\"4\",4,76,4.333\n\"2\",2,59,1.983\n\"5\",5,80,4.633\n\"2\",2,49,2.017\n\"5\",5,96,5.1\n\"2\",2,53,1.8\n\"5\",5,77,5.033\n\"4\",4,77,4\n\"2\",2,65,2.4\n\"5\",5,81,4.6\n\"4\",4,71,3.567\n\"4\",4,70,4\n\"4\",4,81,4.5\n\"4\",4,93,4.083\n\"2\",2,53,1.8\n\"4\",4,89,3.967\n\"2\",2,45,2.2\n\"4\",4,86,4.15\n\"2\",2,58,2\n\"4\",4,78,3.833\n\"4\",4,66,3.5\n\"5\",5,76,4.583\n\"2\",2,63,2.367\n\"5\",5,88,5\n\"2\",2,52,1.933\n\"5\",5,93,4.617\n\"2\",2,49,1.917\n\"2\",2,57,2.083\n\"5\",5,77,4.583\n\"3\",3,68,3.333\n\"4\",4,81,4.167\n\"4\",4,81,4.333\n\"4\",4,73,4.5\n\"2\",2,50,2.417\n\"4\",4,85,4\n\"4\",4,74,4.167\n\"2\",2,55,1.883\n\"5\",5,77,4.583\n\"4\",4,83,4.25\n\"4\",4,83,3.767\n\"2\",2,51,2.033\n\"4\",4,78,4.433\n\"4\",4,84,4.083\n\"2\",2,46,1.833\n\"4\",4,83,4.417\n\"2\",2,55,2.183\n\"5\",5,81,4.8\n\"2\",2,57,1.833\n\"5\",5,76,4.8\n\"4\",4,84,4.1\n\"4\",4,77,3.966\n\"4\",4,81,4.233\n\"4\",4,87,3.5\n\"4\",4,77,4.366\n\"2\",2,51,2.25\n\"5\",5,78,4.667\n\"2\",2,60,2.1\n\"4\",4,82,4.35\n\"4\",4,91,4.133\n\"2\",2,53,1.867\n\"5\",5,78,4.6\n\"2\",2,46,1.783\n\"4\",4,77,4.367\n\"4\",4,84,3.85\n\"2\",2,49,1.933\n\"4\",4,83,4.5\n\"2\",2,71,2.383\n\"5\",5,80,4.7\n\"2\",2,49,1.867\n\"4\",4,75,3.833\n\"3\",3,64,3.417\n\"4\",4,76,4.233\n\"2\",2,53,2.4\n\"5\",5,94,4.8\n\"2\",2,55,2\n\"4\",4,76,4.15\n\"2\",2,50,1.867\n\"4\",4,82,4.267\n\"2\",2,54,1.75\n\"4\",4,75,4.483\n\"4\",4,78,4\n\"4\",4,79,4.117\n\"4\",4,78,4.083\n\"4\",4,78,4.267\n\"4\",4,70,3.917\n\"5\",5,79,4.55\n\"4\",4,70,4.083\n\"2\",2,54,2.417\n\"4\",4,86,4.183\n\"2\",2,50,2.217\n\"4\",4,90,4.45\n\"2\",2,54,1.883\n\"2\",2,54,1.85\n\"4\",4,77,4.283\n\"4\",4,79,3.95\n\"2\",2,64,2.333\n\"4\",4,75,4.15\n\"2\",2,47,2.35\n\"5\",5,86,4.933\n\"3\",3,63,2.9\n\"5\",5,85,4.583\n\"4\",4,82,3.833\n\"2\",2,57,2.083\n\"4\",4,82,4.367\n\"2\",2,67,2.133\n\"4\",4,74,4.35\n\"2\",2,54,2.2\n\"4\",4,83,4.45\n\"4\",4,73,3.567\n\"4\",4,73,4.5\n\"4\",4,88,4.15\n\"4\",4,80,3.817\n\"4\",4,71,3.917\n\"4\",4,83,4.45\n\"2\",2,56,2\n\"4\",4,79,4.283\n\"5\",5,78,4.767\n\"5\",5,84,4.533\n\"2\",2,58,1.85\n\"4\",4,83,4.25\n\"2\",2,43,1.983\n\"2\",2,60,2.25\n\"5\",5,75,4.75\n\"4\",4,81,4.117\n\"2\",2,46,2.15\n\"4\",4,90,4.417\n\"2\",2,46,1.817\n\"4\",4,74,4.467"
+    },
+    {
+      "name": "scale/fill",
+      "format": {
+        "type": "csv",
+        "parse": {}
+      },
+      "values": "\"domain\"\n\"2\"\n\"3\"\n\"4\"\n\"5\""
+    },
+    {
+      "name": "scale/shape",
+      "format": {
+        "type": "csv",
+        "parse": {}
+      },
+      "values": "\"domain\"\n\"2\"\n\"3\"\n\"4\"\n\"5\""
+    },
+    {
+      "name": "scale/size",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n2\n5"
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n40.35\n98.65"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n1.425\n5.275"
+    }
+  ],
+  "scales": [
+    {
+      "name": "fill",
+      "type": "ordinal",
+      "domain": {
+        "data": "scale/fill",
+        "field": "data.domain"
+      },
+      "points": true,
+      "sort": false,
+      "range": "category10"
+    },
+    {
+      "name": "shape",
+      "type": "ordinal",
+      "domain": {
+        "data": "scale/shape",
+        "field": "data.domain"
+      },
+      "points": true,
+      "sort": false,
+      "range": "shapes"
+    },
+    {
+      "name": "size",
+      "domain": {
+        "data": "scale/size",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": [20, 100]
+    },
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "fill": {
+            "scale": "fill",
+            "field": "data.factor(round(eruptions))"
+          },
+          "shape": {
+            "scale": "shape",
+            "field": "data.factor(round(eruptions))"
+          },
+          "size": {
+            "scale": "size",
+            "field": "data.round(eruptions)"
+          },
+          "opacity": {
+            "value": 0.6
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.waiting"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.eruptions"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [
+    {
+      "orient": "right",
+      "fill": "fill",
+      "title": "factor(round(eruptions))"
+    },
+    {
+      "orient": "right",
+      "shape": "shape",
+      "title": "factor(round(eruptions))"
+    },
+    {
+      "orient": "right",
+      "size": "size",
+      "title": "round(eruptions)"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "layer": "back",
+      "grid": true,
+      "title": "waiting"
+    },
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "layer": "back",
+      "grid": true,
+      "title": "eruptions"
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id454069254").parseSpec(plot_id454069254_spec);
+</script></p>
+<ul>
+<li>after consolidation, see <code>add_legend(c('fill', 'shape', 'size'))</code></li>
+</ul>
+<pre class="r"><code>faithful %&gt;% 
+  ggvis(~waiting, ~eruptions, opacity := 0.6, 
+        fill = ~factor(round(eruptions)), shape = ~factor(round(eruptions)), 
+        size = ~round(eruptions))  %&gt;%
+  layer_points() %&gt;%
+  add_legend(title = '~ duration (m)', c('fill', 'shape', 'size'))</code></pre>
+<p><div id="plot_id384897175-container" class="ggvis-output-container">
+<div id="plot_id384897175" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id384897175_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id384897175" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id384897175_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id384897175" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id384897175_download" class="ggvis-download" data-plot-id="plot_id384897175">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id384897175_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "round(eruptions)": "number",
+          "waiting": "number",
+          "eruptions": "number"
+        }
+      },
+      "values": "\"factor(round(eruptions))\",\"round(eruptions)\",\"waiting\",\"eruptions\"\n\"4\",4,79,3.6\n\"2\",2,54,1.8\n\"3\",3,74,3.333\n\"2\",2,62,2.283\n\"5\",5,85,4.533\n\"3\",3,55,2.883\n\"5\",5,88,4.7\n\"4\",4,85,3.6\n\"2\",2,51,1.95\n\"4\",4,85,4.35\n\"2\",2,54,1.833\n\"4\",4,84,3.917\n\"4\",4,78,4.2\n\"2\",2,47,1.75\n\"5\",5,83,4.7\n\"2\",2,52,2.167\n\"2\",2,62,1.75\n\"5\",5,84,4.8\n\"2\",2,52,1.6\n\"4\",4,79,4.25\n\"2\",2,51,1.8\n\"2\",2,47,1.75\n\"3\",3,78,3.45\n\"3\",3,69,3.067\n\"5\",5,74,4.533\n\"4\",4,83,3.6\n\"2\",2,55,1.967\n\"4\",4,76,4.083\n\"4\",4,78,3.85\n\"4\",4,79,4.433\n\"4\",4,73,4.3\n\"4\",4,77,4.467\n\"3\",3,66,3.367\n\"4\",4,80,4.033\n\"4\",4,74,3.833\n\"2\",2,52,2.017\n\"2\",2,48,1.867\n\"5\",5,80,4.833\n\"2\",2,59,1.833\n\"5\",5,90,4.783\n\"4\",4,80,4.35\n\"2\",2,58,1.883\n\"5\",5,84,4.567\n\"2\",2,58,1.75\n\"5\",5,73,4.533\n\"3\",3,83,3.317\n\"4\",4,64,3.833\n\"2\",2,53,2.1\n\"5\",5,82,4.633\n\"2\",2,59,2\n\"5\",5,75,4.8\n\"5\",5,90,4.716\n\"2\",2,54,1.833\n\"5\",5,80,4.833\n\"2\",2,54,1.733\n\"5\",5,83,4.883\n\"4\",4,71,3.717\n\"2\",2,64,1.667\n\"5\",5,77,4.567\n\"4\",4,81,4.317\n\"2\",2,59,2.233\n\"4\",4,84,4.5\n\"2\",2,48,1.75\n\"5\",5,82,4.8\n\"2\",2,60,1.817\n\"4\",4,92,4.4\n\"4\",4,78,4.167\n\"5\",5,78,4.7\n\"2\",2,65,2.067\n\"5\",5,73,4.7\n\"4\",4,82,4.033\n\"2\",2,56,1.967\n\"4\",4,79,4.5\n\"4\",4,71,4\n\"2\",2,62,1.983\n\"5\",5,76,5.067\n\"2\",2,60,2.017\n\"5\",5,78,4.567\n\"4\",4,76,3.883\n\"4\",4,83,3.6\n\"4\",4,75,4.133\n\"4\",4,82,4.333\n\"4\",4,70,4.1\n\"3\",3,65,2.633\n\"4\",4,73,4.067\n\"5\",5,88,4.933\n\"4\",4,76,3.95\n\"5\",5,80,4.517\n\"2\",2,48,2.167\n\"4\",4,86,4\n\"2\",2,60,2.2\n\"4\",4,90,4.333\n\"2\",2,50,1.867\n\"5\",5,78,4.817\n\"2\",2,63,1.833\n\"4\",4,72,4.3\n\"5\",5,84,4.667\n\"4\",4,75,3.75\n\"2\",2,51,1.867\n\"5\",5,82,4.9\n\"2\",2,62,2.483\n\"4\",4,88,4.367\n\"2\",2,49,2.1\n\"4\",4,83,4.5\n\"4\",4,81,4.05\n\"2\",2,47,1.867\n\"5\",5,84,4.7\n\"2\",2,52,1.783\n\"5\",5,86,4.85\n\"4\",4,81,3.683\n\"5\",5,75,4.733\n\"2\",2,59,2.3\n\"5\",5,89,4.9\n\"4\",4,79,4.417\n\"2\",2,59,1.7\n\"5\",5,81,4.633\n\"2\",2,50,2.317\n\"5\",5,85,4.6\n\"2\",2,59,1.817\n\"4\",4,87,4.417\n\"3\",3,53,2.617\n\"4\",4,69,4.067\n\"4\",4,77,4.25\n\"2\",2,56,1.967\n\"5\",5,88,4.6\n\"4\",4,81,3.767\n\"2\",2,45,1.917\n\"4\",4,82,4.5\n\"2\",2,55,2.267\n\"5\",5,90,4.65\n\"2\",2,45,1.867\n\"4\",4,83,4.167\n\"3\",3,56,2.8\n\"4\",4,89,4.333\n\"2\",2,46,1.833\n\"4\",4,82,4.383\n\"2\",2,51,1.883\n\"5\",5,86,4.933\n\"2\",2,53,2.033\n\"4\",4,79,3.733\n\"4\",4,81,4.233\n\"2\",2,60,2.233\n\"5\",5,82,4.533\n\"5\",5,77,4.817\n\"4\",4,76,4.333\n\"2\",2,59,1.983\n\"5\",5,80,4.633\n\"2\",2,49,2.017\n\"5\",5,96,5.1\n\"2\",2,53,1.8\n\"5\",5,77,5.033\n\"4\",4,77,4\n\"2\",2,65,2.4\n\"5\",5,81,4.6\n\"4\",4,71,3.567\n\"4\",4,70,4\n\"4\",4,81,4.5\n\"4\",4,93,4.083\n\"2\",2,53,1.8\n\"4\",4,89,3.967\n\"2\",2,45,2.2\n\"4\",4,86,4.15\n\"2\",2,58,2\n\"4\",4,78,3.833\n\"4\",4,66,3.5\n\"5\",5,76,4.583\n\"2\",2,63,2.367\n\"5\",5,88,5\n\"2\",2,52,1.933\n\"5\",5,93,4.617\n\"2\",2,49,1.917\n\"2\",2,57,2.083\n\"5\",5,77,4.583\n\"3\",3,68,3.333\n\"4\",4,81,4.167\n\"4\",4,81,4.333\n\"4\",4,73,4.5\n\"2\",2,50,2.417\n\"4\",4,85,4\n\"4\",4,74,4.167\n\"2\",2,55,1.883\n\"5\",5,77,4.583\n\"4\",4,83,4.25\n\"4\",4,83,3.767\n\"2\",2,51,2.033\n\"4\",4,78,4.433\n\"4\",4,84,4.083\n\"2\",2,46,1.833\n\"4\",4,83,4.417\n\"2\",2,55,2.183\n\"5\",5,81,4.8\n\"2\",2,57,1.833\n\"5\",5,76,4.8\n\"4\",4,84,4.1\n\"4\",4,77,3.966\n\"4\",4,81,4.233\n\"4\",4,87,3.5\n\"4\",4,77,4.366\n\"2\",2,51,2.25\n\"5\",5,78,4.667\n\"2\",2,60,2.1\n\"4\",4,82,4.35\n\"4\",4,91,4.133\n\"2\",2,53,1.867\n\"5\",5,78,4.6\n\"2\",2,46,1.783\n\"4\",4,77,4.367\n\"4\",4,84,3.85\n\"2\",2,49,1.933\n\"4\",4,83,4.5\n\"2\",2,71,2.383\n\"5\",5,80,4.7\n\"2\",2,49,1.867\n\"4\",4,75,3.833\n\"3\",3,64,3.417\n\"4\",4,76,4.233\n\"2\",2,53,2.4\n\"5\",5,94,4.8\n\"2\",2,55,2\n\"4\",4,76,4.15\n\"2\",2,50,1.867\n\"4\",4,82,4.267\n\"2\",2,54,1.75\n\"4\",4,75,4.483\n\"4\",4,78,4\n\"4\",4,79,4.117\n\"4\",4,78,4.083\n\"4\",4,78,4.267\n\"4\",4,70,3.917\n\"5\",5,79,4.55\n\"4\",4,70,4.083\n\"2\",2,54,2.417\n\"4\",4,86,4.183\n\"2\",2,50,2.217\n\"4\",4,90,4.45\n\"2\",2,54,1.883\n\"2\",2,54,1.85\n\"4\",4,77,4.283\n\"4\",4,79,3.95\n\"2\",2,64,2.333\n\"4\",4,75,4.15\n\"2\",2,47,2.35\n\"5\",5,86,4.933\n\"3\",3,63,2.9\n\"5\",5,85,4.583\n\"4\",4,82,3.833\n\"2\",2,57,2.083\n\"4\",4,82,4.367\n\"2\",2,67,2.133\n\"4\",4,74,4.35\n\"2\",2,54,2.2\n\"4\",4,83,4.45\n\"4\",4,73,3.567\n\"4\",4,73,4.5\n\"4\",4,88,4.15\n\"4\",4,80,3.817\n\"4\",4,71,3.917\n\"4\",4,83,4.45\n\"2\",2,56,2\n\"4\",4,79,4.283\n\"5\",5,78,4.767\n\"5\",5,84,4.533\n\"2\",2,58,1.85\n\"4\",4,83,4.25\n\"2\",2,43,1.983\n\"2\",2,60,2.25\n\"5\",5,75,4.75\n\"4\",4,81,4.117\n\"2\",2,46,2.15\n\"4\",4,90,4.417\n\"2\",2,46,1.817\n\"4\",4,74,4.467"
+    },
+    {
+      "name": "scale/fill",
+      "format": {
+        "type": "csv",
+        "parse": {}
+      },
+      "values": "\"domain\"\n\"2\"\n\"3\"\n\"4\"\n\"5\""
+    },
+    {
+      "name": "scale/shape",
+      "format": {
+        "type": "csv",
+        "parse": {}
+      },
+      "values": "\"domain\"\n\"2\"\n\"3\"\n\"4\"\n\"5\""
+    },
+    {
+      "name": "scale/size",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n2\n5"
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n40.35\n98.65"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n1.425\n5.275"
+    }
+  ],
+  "scales": [
+    {
+      "name": "fill",
+      "type": "ordinal",
+      "domain": {
+        "data": "scale/fill",
+        "field": "data.domain"
+      },
+      "points": true,
+      "sort": false,
+      "range": "category10"
+    },
+    {
+      "name": "shape",
+      "type": "ordinal",
+      "domain": {
+        "data": "scale/shape",
+        "field": "data.domain"
+      },
+      "points": true,
+      "sort": false,
+      "range": "shapes"
+    },
+    {
+      "name": "size",
+      "domain": {
+        "data": "scale/size",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": [20, 100]
+    },
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "fill": {
+            "scale": "fill",
+            "field": "data.factor(round(eruptions))"
+          },
+          "shape": {
+            "scale": "shape",
+            "field": "data.factor(round(eruptions))"
+          },
+          "size": {
+            "scale": "size",
+            "field": "data.round(eruptions)"
+          },
+          "opacity": {
+            "value": 0.6
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.waiting"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.eruptions"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [
+    {
+      "orient": "right",
+      "title": "~ duration (m)",
+      "fill": "fill",
+      "shape": "shape",
+      "size": "size"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "layer": "back",
+      "grid": true,
+      "title": "waiting"
+    },
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "layer": "back",
+      "grid": true,
+      "title": "eruptions"
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id384897175").parseSpec(plot_id384897175_spec);
+</script></p>
+</div>
+<div id="customize-the-color-with-scale" class="section level3">
+<h3>Customize the color with <code>scale</code></h3>
+<ul>
+<li><code>scale_numeric()</code></li>
+<li><code>scale_datetime()</code></li>
+<li><code>scale_logical()</code></li>
+<li><code>scale_nominal()</code></li>
+<li><code>scale_singular()</code></li>
+</ul>
+<hr />
+<ul>
+<li><code>scale_numeric()</code> is contineuous color mapping to a range of color</li>
+</ul>
+<pre class="r"><code>mtcars %&gt;% ggvis(~wt, ~mpg, fill = ~hp) %&gt;%
+  layer_points() %&gt;%
+  scale_numeric('fill', range = c('beige', 'green'))</code></pre>
+<p><div id="plot_id718410457-container" class="ggvis-output-container">
+<div id="plot_id718410457" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id718410457_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id718410457" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id718410457_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id718410457" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id718410457_download" class="ggvis-download" data-plot-id="plot_id718410457">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id718410457_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "hp": "number",
+          "wt": "number",
+          "mpg": "number"
+        }
+      },
+      "values": "\"hp\",\"wt\",\"mpg\"\n110,2.62,21\n110,2.875,21\n93,2.32,22.8\n110,3.215,21.4\n175,3.44,18.7\n105,3.46,18.1\n245,3.57,14.3\n62,3.19,24.4\n95,3.15,22.8\n123,3.44,19.2\n123,3.44,17.8\n180,4.07,16.4\n180,3.73,17.3\n180,3.78,15.2\n205,5.25,10.4\n215,5.424,10.4\n230,5.345,14.7\n66,2.2,32.4\n52,1.615,30.4\n65,1.835,33.9\n97,2.465,21.5\n150,3.52,15.5\n150,3.435,15.2\n245,3.84,13.3\n175,3.845,19.2\n66,1.935,27.3\n91,2.14,26\n113,1.513,30.4\n264,3.17,15.8\n175,2.77,19.7\n335,3.57,15\n109,2.78,21.4"
+    },
+    {
+      "name": "scale/fill",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n52\n335"
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n1.31745\n5.61955"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n9.225\n35.075"
+    }
+  ],
+  "scales": [
+    {
+      "domain": {
+        "data": "scale/fill",
+        "field": "data.domain"
+      },
+      "name": "fill",
+      "range": ["beige", "green"],
+      "zero": false,
+      "nice": false,
+      "clamp": false
+    },
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "size": {
+            "value": 50
+          },
+          "fill": {
+            "scale": "fill",
+            "field": "data.hp"
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.wt"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.mpg"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [
+    {
+      "orient": "right",
+      "fill": "fill",
+      "title": "hp"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "layer": "back",
+      "grid": true,
+      "title": "wt"
+    },
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "layer": "back",
+      "grid": true,
+      "title": "mpg"
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id718410457").parseSpec(plot_id718410457_spec);
+</script></p>
+<ul>
+<li><code>scale_nominal()</code> is categorical mapping of color</li>
+</ul>
+<pre class="r"><code>mtcars %&gt;% ggvis(~wt, ~mpg, fill = ~factor(cyl)) %&gt;%
+  layer_points() %&gt;%
+  scale_nominal(&quot;fill&quot;, range = c(&quot;purple&quot;, &quot;blue&quot;, &quot;green&quot;))</code></pre>
+<p><div id="plot_id263213860-container" class="ggvis-output-container">
+<div id="plot_id263213860" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id263213860_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id263213860" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id263213860_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id263213860" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id263213860_download" class="ggvis-download" data-plot-id="plot_id263213860">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id263213860_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "wt": "number",
+          "mpg": "number"
+        }
+      },
+      "values": "\"factor(cyl)\",\"wt\",\"mpg\"\n\"6\",2.62,21\n\"6\",2.875,21\n\"4\",2.32,22.8\n\"6\",3.215,21.4\n\"8\",3.44,18.7\n\"6\",3.46,18.1\n\"8\",3.57,14.3\n\"4\",3.19,24.4\n\"4\",3.15,22.8\n\"6\",3.44,19.2\n\"6\",3.44,17.8\n\"8\",4.07,16.4\n\"8\",3.73,17.3\n\"8\",3.78,15.2\n\"8\",5.25,10.4\n\"8\",5.424,10.4\n\"8\",5.345,14.7\n\"4\",2.2,32.4\n\"4\",1.615,30.4\n\"4\",1.835,33.9\n\"4\",2.465,21.5\n\"8\",3.52,15.5\n\"8\",3.435,15.2\n\"8\",3.84,13.3\n\"8\",3.845,19.2\n\"4\",1.935,27.3\n\"4\",2.14,26\n\"4\",1.513,30.4\n\"8\",3.17,15.8\n\"6\",2.77,19.7\n\"8\",3.57,15\n\"4\",2.78,21.4"
+    },
+    {
+      "name": "scale/fill",
+      "format": {
+        "type": "csv",
+        "parse": {}
+      },
+      "values": "\"domain\"\n\"4\"\n\"6\"\n\"8\""
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n1.31745\n5.61955"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n9.225\n35.075"
+    }
+  ],
+  "scales": [
+    {
+      "domain": {
+        "data": "scale/fill",
+        "field": "data.domain"
+      },
+      "name": "fill",
+      "type": "ordinal",
+      "range": ["purple", "blue", "green"],
+      "points": true,
+      "sort": false
+    },
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "size": {
+            "value": 50
+          },
+          "fill": {
+            "scale": "fill",
+            "field": "data.factor(cyl)"
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.wt"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.mpg"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [
+    {
+      "orient": "right",
+      "fill": "fill",
+      "title": "factor(cyl)"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "layer": "back",
+      "grid": true,
+      "title": "wt"
+    },
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "layer": "back",
+      "grid": true,
+      "title": "mpg"
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id263213860").parseSpec(plot_id263213860_spec);
+</script></p>
+<hr />
+</div>
+<div id="scale-more-than-color" class="section level3">
+<h3><code>scale</code> more than color</h3>
+<ul>
+<li><code>scale</code> can be used not only to color, but to other property, like <code>opacity</code> here</li>
+</ul>
+<pre class="r"><code>mtcars %&gt;% ggvis(x = ~wt, y = ~mpg, fill = ~factor(cyl), opacity = ~hp) %&gt;%
+  layer_points() %&gt;%
+  scale_numeric('opacity', range = c(0.2,1))</code></pre>
+<p><div id="plot_id977076821-container" class="ggvis-output-container">
+<div id="plot_id977076821" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id977076821_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id977076821" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id977076821_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id977076821" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id977076821_download" class="ggvis-download" data-plot-id="plot_id977076821">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id977076821_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "wt": "number",
+          "mpg": "number",
+          "hp": "number"
+        }
+      },
+      "values": "\"wt\",\"mpg\",\"factor(cyl)\",\"hp\"\n2.62,21,\"6\",110\n2.875,21,\"6\",110\n2.32,22.8,\"4\",93\n3.215,21.4,\"6\",110\n3.44,18.7,\"8\",175\n3.46,18.1,\"6\",105\n3.57,14.3,\"8\",245\n3.19,24.4,\"4\",62\n3.15,22.8,\"4\",95\n3.44,19.2,\"6\",123\n3.44,17.8,\"6\",123\n4.07,16.4,\"8\",180\n3.73,17.3,\"8\",180\n3.78,15.2,\"8\",180\n5.25,10.4,\"8\",205\n5.424,10.4,\"8\",215\n5.345,14.7,\"8\",230\n2.2,32.4,\"4\",66\n1.615,30.4,\"4\",52\n1.835,33.9,\"4\",65\n2.465,21.5,\"4\",97\n3.52,15.5,\"8\",150\n3.435,15.2,\"8\",150\n3.84,13.3,\"8\",245\n3.845,19.2,\"8\",175\n1.935,27.3,\"4\",66\n2.14,26,\"4\",91\n1.513,30.4,\"4\",113\n3.17,15.8,\"8\",264\n2.77,19.7,\"6\",175\n3.57,15,\"8\",335\n2.78,21.4,\"4\",109"
+    },
+    {
+      "name": "scale/fill",
+      "format": {
+        "type": "csv",
+        "parse": {}
+      },
+      "values": "\"domain\"\n\"4\"\n\"6\"\n\"8\""
+    },
+    {
+      "name": "scale/opacity",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n52\n335"
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n1.31745\n5.61955"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n9.225\n35.075"
+    }
+  ],
+  "scales": [
+    {
+      "name": "fill",
+      "type": "ordinal",
+      "domain": {
+        "data": "scale/fill",
+        "field": "data.domain"
+      },
+      "points": true,
+      "sort": false,
+      "range": "category10"
+    },
+    {
+      "domain": {
+        "data": "scale/opacity",
+        "field": "data.domain"
+      },
+      "name": "opacity",
+      "range": [0.2, 1],
+      "zero": false,
+      "nice": false,
+      "clamp": false
+    },
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "size": {
+            "value": 50
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.wt"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.mpg"
+          },
+          "fill": {
+            "scale": "fill",
+            "field": "data.factor(cyl)"
+          },
+          "opacity": {
+            "scale": "opacity",
+            "field": "data.hp"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [
+    {
+      "orient": "right",
+      "fill": "fill",
+      "title": "factor(cyl)"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "layer": "back",
+      "grid": true,
+      "title": "wt"
+    },
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "layer": "back",
+      "grid": true,
+      "title": "mpg"
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id977076821").parseSpec(plot_id977076821_spec);
+</script></p>
+<ul>
+<li>we can even adjust the scale of the value of x, and y axis, see <code>?scale_numeric</code> for details</li>
+</ul>
+<pre class="r"><code>mtcars %&gt;% ggvis(~wt, ~mpg, fill = ~disp) %&gt;%
+  layer_points() %&gt;%
+  scale_numeric(&quot;y&quot;, domain = c(0, NA)) %&gt;%
+  scale_numeric(&quot;x&quot;, domain = c(0, 6))</code></pre>
+<p><div id="plot_id288001589-container" class="ggvis-output-container">
+<div id="plot_id288001589" class="ggvis-output"></div>
+<div class="plot-gear-icon">
+<nav class="ggvis-control">
+<a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
+<ul class="ggvis-dropdown">
+<li>
+Renderer: 
+<a id="plot_id288001589_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id288001589" data-renderer="svg">SVG</a>
+ | 
+<a id="plot_id288001589_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id288001589" data-renderer="canvas">Canvas</a>
+</li>
+<li>
+<a id="plot_id288001589_download" class="ggvis-download" data-plot-id="plot_id288001589">Download</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script type="text/javascript">
+var plot_id288001589_spec = {
+  "data": [
+    {
+      "name": ".0",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "disp": "number",
+          "wt": "number",
+          "mpg": "number"
+        }
+      },
+      "values": "\"disp\",\"wt\",\"mpg\"\n160,2.62,21\n160,2.875,21\n108,2.32,22.8\n258,3.215,21.4\n360,3.44,18.7\n225,3.46,18.1\n360,3.57,14.3\n146.7,3.19,24.4\n140.8,3.15,22.8\n167.6,3.44,19.2\n167.6,3.44,17.8\n275.8,4.07,16.4\n275.8,3.73,17.3\n275.8,3.78,15.2\n472,5.25,10.4\n460,5.424,10.4\n440,5.345,14.7\n78.7,2.2,32.4\n75.7,1.615,30.4\n71.1,1.835,33.9\n120.1,2.465,21.5\n318,3.52,15.5\n304,3.435,15.2\n350,3.84,13.3\n400,3.845,19.2\n79,1.935,27.3\n120.3,2.14,26\n95.1,1.513,30.4\n351,3.17,15.8\n145,2.77,19.7\n301,3.57,15\n121,2.78,21.4"
+    },
+    {
+      "name": "scale/fill",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n71.1\n472"
+    },
+    {
+      "name": "scale/x",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n-0.3\n6.3"
+    },
+    {
+      "name": "scale/y",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "domain": "number"
+        }
+      },
+      "values": "\"domain\"\n-1.695\n35.595"
+    }
+  ],
+  "scales": [
+    {
+      "name": "fill",
+      "domain": {
+        "data": "scale/fill",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": ["#132B43", "#56B1F7"]
+    },
+    {
+      "name": "x",
+      "domain": {
+        "data": "scale/x",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "domain": {
+        "data": "scale/y",
+        "field": "data.domain"
+      },
+      "zero": false,
+      "nice": false,
+      "clamp": false,
+      "range": "height"
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "properties": {
+        "update": {
+          "size": {
+            "value": 50
+          },
+          "fill": {
+            "scale": "fill",
+            "field": "data.disp"
+          },
+          "x": {
+            "scale": "x",
+            "field": "data.wt"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.mpg"
+          }
+        },
+        "ggvis": {
+          "data": {
+            "value": ".0"
+          }
+        }
+      },
+      "from": {
+        "data": ".0"
+      }
+    }
+  ],
+  "legends": [
+    {
+      "orient": "right",
+      "fill": "fill",
+      "title": "disp"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x",
+      "orient": "bottom",
+      "layer": "back",
+      "grid": true,
+      "title": "wt"
+    },
+    {
+      "type": "y",
+      "scale": "y",
+      "orient": "left",
+      "layer": "back",
+      "grid": true,
+      "title": "mpg"
+    }
+  ],
+  "padding": null,
+  "ggvis_opts": {
+    "keep_aspect": false,
+    "resizable": true,
+    "padding": {},
+    "duration": 250,
+    "renderer": "svg",
+    "hover_duration": 0,
+    "width": 672,
+    "height": 480
+  },
+  "handlers": null
+};
+ggvis.getPlot("plot_id288001589").parseSpec(plot_id288001589_spec);
+</script></p>
+</div>
 </div>
 
 
