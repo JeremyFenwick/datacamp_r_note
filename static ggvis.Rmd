@@ -1,7 +1,7 @@
 ---
 title: "static ggvis"
-author: "Lucas Shen"
-date: "August 8, 2015"
+author: "Lucas Shen @sqor"
+date: "August 9, 2015"
 output: html_document
 ---
 ```{r, message=FALSE}
@@ -10,7 +10,7 @@ library(dplyr)
 ```
 ***
 
-###make line chart between mpg and wt, find approx line for each group by cyl
+###Make line chart between mpg and wt, find approx,smooth line for each group by cyl
 ```{r}
 mtcars %>% 
   group_by(cyl) %>%
@@ -19,13 +19,13 @@ mtcars %>%
   layer_points()
 ```
 
-###make density chart and color for different group of cyl
+###Make density chart and color by different group of cyl
 * pay attention to the `~factor(var)` part. This is how we could directly handle transformed variable.
 ```{r}
 mtcars %>% group_by(cyl) %>% ggvis(~mpg) %>% layer_densities(fill = ~factor(cyl))
 ```
 
-###group_by more than one `var`
+###`group_by` more than one `var`
 * you can see that we are still coloring by cyl factor
 ```{r}
 mtcars %>% group_by(cyl, am) %>% ggvis(~mpg, fill = ~factor(cyl)) %>% layer_densities()
@@ -39,7 +39,7 @@ mtcars %>% group_by(cyl, am) %>% ggvis(~mpg, fill = ~interaction(cyl, am)) %>% l
 
 ***
 
-##Multi-layer plot
+###Multi-layer plot
 2 points here:
 
 1. we should seperate properties for different layers to create the real visual effect you want
@@ -62,7 +62,7 @@ pressure %>%
 ```
 
 ***
-###Polish a bit: addind axes and legends
+###axes and legends
 * add modified axes, attention on `value` and `subdivide` to control tick mark.
 ```{r}
 faithful %>% 
@@ -106,7 +106,7 @@ faithful %>%
   add_legend(title = '~ duration (m)', c('fill', 'shape', 'size'))
 ```
 
-###Customize the color with `scale`
+###`scale`
 * `scale_numeric()`
 * `scale_datetime()`
 * `scale_logical()`
@@ -115,14 +115,14 @@ faithful %>%
 
 ***
 
-* `scale_numeric()` is contineuous color mapping to a range of color
+* use `scale_numeric()` to map property `fill` to a contineuous color range
 ```{r}
 mtcars %>% ggvis(~wt, ~mpg, fill = ~hp) %>%
   layer_points() %>%
   scale_numeric('fill', range = c('beige', 'green'))
 ```
 
-* `scale_nominal()` is categorical mapping of color
+* `scale_nominal()` :categorical mapping
 ```{r}
 mtcars %>% ggvis(~wt, ~mpg, fill = ~factor(cyl)) %>%
   layer_points() %>%
@@ -131,8 +131,8 @@ mtcars %>% ggvis(~wt, ~mpg, fill = ~factor(cyl)) %>%
 
 ***
 
-###`scale` more than color
-* `scale` can be used not only to color, but to other property, like `opacity` here
+###`scale` more than just color
+* `scale` can be used not only to color, but to other properties, like `opacity` here
 ```{r}
 mtcars %>% ggvis(x = ~wt, y = ~mpg, fill = ~factor(cyl), opacity = ~hp) %>%
   layer_points() %>%

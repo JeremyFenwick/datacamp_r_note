@@ -1,0 +1,7 @@
+---
+title: "R markdown note"
+author: "Lucas Shen"
+date: "August 9, 2015"
+output: html_document
+---
+
