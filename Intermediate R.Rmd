@@ -10,8 +10,9 @@ library(dplyr)
 ```
 ***
 
-### `lapply(x, fun)`
+### `lapply(x, FUN, ...)`
 > like python's `map`, return `list`
+> good for heterogeneous data, but sometimes unneccesary
 
 ```{r}
 1:10 %>% lapply(function(x) x^2) %>% unlist()
@@ -24,6 +25,66 @@ library(dplyr)
 1:10 %>% lapply(function(base, power) base^power, power=3) %>% unlist()
 ```
 
-###`sapply(x, fun)`
+###`sapply(X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE)`
+> try to simply the output for you, 
+
+###`vapply(X, FUN, FUN.VALUE, ..., USE.NAMES = TRUE)`
+> you have to specify output format, it makes it a safer alternative of sapply
+> 
+> so the `FUN.VALUE` is where you explicityly specify what you expect your function to return.
+
+> usually, you name elements in the return vector
+
+```{r eval=F}
+data %>% vapply(func, character(2)) # func should return vec 2 strings
+```
+
+***
+#Useful functions
+###math
+```{r eval=F}
+abs()
+
+round()
+
+sum()
+
+mean()
+```
+
+###data structure
+```{r eval=F}
+rep( seq, times = n) # repeat as a whole 123 -> 123123
+
+rep( seq, each = n) # repeat element wise 123 -> 112233
+
+seq(start, end, by = k)
+
+str()
+
+is.*() # check type
+
+as.*() # convert to type
+
+unlist() # -> vector
+
+rev()
+```
+
+###regular expressions
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
 
 

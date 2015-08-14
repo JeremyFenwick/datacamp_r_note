@@ -70,10 +70,10 @@ img {
 
 <pre class="r"><code>library(dplyr)</code></pre>
 <hr />
-<div id="lapplyx-fun" class="section level3">
-<h3><code>lapply(x, fun)</code></h3>
+<div id="lapplyx-fun-..." class="section level3">
+<h3><code>lapply(x, FUN, ...)</code></h3>
 <blockquote>
-<p>like python’s <code>map</code>, return <code>list</code></p>
+<p>like python’s <code>map</code>, return <code>list</code> good for heterogeneous data, but sometimes unneccesary</p>
 </blockquote>
 <pre class="r"><code>1:10 %&gt;% lapply(function(x) x^2) %&gt;% unlist()</code></pre>
 <pre><code>##  [1]   1   4   9  16  25  36  49  64  81 100</code></pre>
@@ -84,6 +84,47 @@ img {
 <pre><code>##  [1]   1   4   9  16  25  36  49  64  81 100</code></pre>
 <pre class="r"><code>1:10 %&gt;% lapply(function(base, power) base^power, power=3) %&gt;% unlist()</code></pre>
 <pre><code>##  [1]    1    8   27   64  125  216  343  512  729 1000</code></pre>
+</div>
+<div id="sapplyx-fun-...-simplify-true-use.names-true" class="section level3">
+<h3><code>sapply(X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE)</code></h3>
+<blockquote>
+<p>try to simply the output for you,</p>
+</blockquote>
+</div>
+<div id="vapplyx-fun-fun.value-...-use.names-true" class="section level3">
+<h3><code>vapply(X, FUN, FUN.VALUE, ..., USE.NAMES = TRUE)</code></h3>
+<blockquote>
+<p>you have to specify output format, it makes it a safer alternative of sapply</p>
+<p>so the <code>FUN.VALUE</code> is where you explicityly specify what you expect your function to return.</p>
+</blockquote>
+<blockquote>
+<p>usually, you name elements in the return vector</p>
+</blockquote>
+<pre class="r"><code>data %&gt;% vapply(func, character(2)) # func should return vec 2 strings</code></pre>
+<hr />
+</div>
+<div id="useful-functions" class="section level1">
+<h1>Useful functions</h1>
+<div id="math" class="section level3">
+<h3>math</h3>
+<pre class="r"><code>abs()
+
+round()
+
+sum()
+
+mean()</code></pre>
+</div>
+<div id="data-structure" class="section level3">
+<h3>data structure</h3>
+<pre class="r"><code>rep( seq, times = n) # repeat as a whole 123 -&gt; 123123
+
+rep( seq, each = n) # repeat element wise 123 -&gt; 112233
+
+seq(start, end, by = k)
+
+str()</code></pre>
+</div>
 </div>
 
 
