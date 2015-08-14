@@ -1,0 +1,29 @@
+---
+title: "Intermediate R"
+author: "Lucas Shen"
+date: "August 14, 2015"
+output: html_document
+---
+
+```{r message=F}
+library(dplyr)
+```
+***
+
+### `lapply(x, fun)`
+> like python's `map`, return `list`
+
+```{r}
+1:10 %>% lapply(function(x) x^2) %>% unlist()
+```
+
+> we have `funciton(x,y)` here, the vector would pipe in the first argument, and we have to specify the second one by name = val
+
+```{r}
+1:10 %>% lapply(function(base, power) base^power, power=2) %>% unlist()
+1:10 %>% lapply(function(base, power) base^power, power=3) %>% unlist()
+```
+
+###`sapply(x, fun)`
+
+
